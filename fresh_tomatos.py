@@ -9,7 +9,7 @@ main_page_head = '''
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Movies Trailers!</title>
+    <title>Movies Trailers</title>
 
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
@@ -19,7 +19,7 @@ main_page_head = '''
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
-            background-color: rgb(2, 1, 15);
+            background-color: #faf0e6;
         }
         #trailer .modal-dialog {
             margin-top: 200px;
@@ -39,11 +39,11 @@ main_page_head = '''
         .movie-tile {
             margin-bottom: 20px;
             padding-top: 20px;
-            color: rgb(237, 71, 1);
+            color: #1ca9c9;
 
         }
         .movie-tile:hover {
-            border: 1px solid rgb(252, 118, 0);
+            border: 1px solid #1ca9c9;
             cursor: pointer;
         }
         .scale-media {
@@ -64,7 +64,7 @@ main_page_head = '''
             color: transparent;
         }
         #storyline-id:hover{
-            color: rgb(237, 71, 1);
+            color: #1ca9c9;
         }
     </style>
 
@@ -136,7 +136,7 @@ movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
     <h2>{movie_title}</h2>
-    <h6 id= "storyline-id">{storyline}</h6>
+    <p id= "storyline-id">{storyline}</p>
 </div>
 '''
 
